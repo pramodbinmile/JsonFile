@@ -1,0 +1,17 @@
+[
+    {
+        "name" : "Pramod",
+        "email" : "xyz@gmail.com",
+        "mobile" : "1234567891"
+    },
+    {
+        "name" : "Ajay",
+        "email" : "abc@gmail.com",
+        "mobile" : "98765567891"
+    },
+    {
+        "name" : "Pradeep",
+        "email" : "uvw@gmail.com",
+        "mobile" : "1234567891"
+    }
+]

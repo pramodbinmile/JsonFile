@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON</title>
+     </head>
+    <body>
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                    </tr>
+                </thead>
+                <tbody id="data"> 
+                    
+                </tbody>
+            </table>
+        </div>
+        <div id="para"></div>
+        <script>
+            fetch("person.json")
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                if(data.length > 0)
+                var temp = "";
+                data.forEach((d) =>{
+                    temp += "<tr>";
+                        temp += "<td>" + d.name + "</td>";
+                        temp += "<td>" + d.email + "</td>";
+                        temp += "<td>" + d.mobile + "</td></tr";
+                })
+                document.getElementById("data").innerHTML = temp;
+            })
+
+        </script>
+    </body>
+</html>
